@@ -19,7 +19,7 @@
    [Google Rich Results Test](https://search.google.com/test/rich-results/result?id=3wnFKnzfsNo19DOBWJe8mg)
 
 3. ⚡ **تحليل أداء الصفحة وتحسين السرعة**  
-   [PageSpeed Insights](https://pagespeed.web.dev/)
+   [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-webstory-siwane-xyz-amp-story-html/ces6by7zb6?form_factor=mobile)
 
 ✍ **ننصح المستخدمين بتحسين الأداء وضغط الصور وتحسين تحميل الموارد عند التعديل.**
 
