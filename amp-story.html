@@ -425,23 +425,27 @@
     </amp-story-grid-layer>
   </amp-story-page>
 
-       <!--[ الصفحة 4: الفيديو ]-->
-            <amp-story-page id="page4">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster="video-thumbnail.jpg"
-                layout="responsive">
-              <source src="introsiwane.mp4" type="video/mp4">
-          </amp-video>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1>صوان</h1>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>مقطع من مشروع انترو لقناة صوان محور XYZ كمثال لكيفية عرض الفيدبو.</p>
-        </amp-story-grid-layer>
-      </amp-story-page>
+       <!-- [ الصفحة 4: الفيديو ] -->
+<amp-story-page id="page4">
+    <amp-story-grid-layer template="fill">
+        <amp-video autoplay loop
+            width="720" height="1280"
+            poster="video-thumbnail.jpg"
+            layout="responsive">
+            <source src="introsiwane.mp4" type="video/mp4">
+        </amp-video>
+    </amp-story-grid-layer>
+
+    <!-- طبقة العنوان -->
+    <amp-story-grid-layer template="vertical" class="title-layer">
+        <h1 class="story-title">صوان</h1>
+    </amp-story-grid-layer>
+
+    <!-- طبقة الفقرة -->
+    <amp-story-grid-layer template="vertical" class="text-layer">
+        <p class="story-text">مقطع من مشروع انترو لقناة صوان محور XYZ كمثال لكيفية عرض الفيديو.</p>
+    </amp-story-grid-layer>
+</amp-story-page>
    
   <!--[ الصفحة الأخيرة ]-->
   <amp-story-page id='page6'>
