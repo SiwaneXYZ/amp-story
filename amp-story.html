@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" ⚡>
+<head>
+    <meta charset="utf-8">
+    <title>صوان ـ قصص ويب</title>
+    <meta name="description" content="قصص ويب من صوان محور XYZ بواسطة جمال الحزازي.">
+    <meta name="keywords" content="قصة, صوان, جمال, الحزازي">
+    <meta name="author" content="جمال الحزازي">
+    <meta property="og:title" content="صوان ـ قصص ويب">
+    <meta property="og:description" content="قصص ويب من صوان محور XYZ بواسطة جمال الحزازي.">
+    <meta property="og:image" content="https://webstory.siwane.xyz/cover.jpg">
+    <meta property="og:url" content="https://webstory.siwane.xyz/amp-story.html">
+    <meta name="twitter:card" content="https://webstory.siwane.xyz/cover.jpg">
+    <meta name="twitter:title" content="صوان ـ قصص ويب">
+    <meta name="twitter:description" content="قصص ويب من صوان محور XYZ بواسطة جمال الحزازي.">
+    <meta name="twitter:image" content="https://webstory.siwane.xyz/cover.jpg">
+    <link rel="canonical" href="self.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "صوان ـ قصص ويب",
+  "description": "قصص ويب من صوان محور XYZ بواسطة جمال الحزازي.",
+  "datePublished": "2024-02-03T12:00:00+00:00",
+  "dateModified": "2024-02-03T12:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "جمال الحزازي",
+    "url": "https://siwane.xyz"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "صوان",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://webstory.siwane.xyz/logo.png",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://webstory.siwane.xyz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://webstory.siwane.xyz/cover.jpg",
+    "width": 1200,
+    "height": 675
+  },
+  "video": {
+    "@type": "VideoObject",
+    "name": "عنوان الفيديو داخل القصة",
+    "description": "وصف الفيديو",
+    "thumbnailUrl": "https://webstory.siwane.xyz/video-thumbnail.jpg",
+    "contentUrl": "https://webstory.siwane.xyz/introsiwane.mp4",
+    "uploadDate": "2024-02-03T12:00:00+00:00"
+  },
+  "isAccessibleForFree": "True",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://siwane.xyz"
+  },
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": ["https://webstory.siwane.xyz/amp-story.html"]
+  }
+}
+</script>
+
+<style amp-custom>
+    /* الأساسيات - نفس التخصيصات مع تحسينات استجابة */
+    amp-story-page {
+        background: linear-gradient(360deg,  
+            #D0F0EA 0%,  
+            #92E0D3 20%,  
+            #6DB2A6 55%,  
+            #2B8578 90%,  
+            #446662 100%);
+        color: #fff;
+        font-family: 'Tajawal', sans-serif;
+    }
+    
+    amp-story {
+        font-family: 'Tajawal', sans-serif;
+        --primary-color: #92E0D3; 
+        --accent-color: #299e94; 
+        --banner-color: #446662;
+        --text-light: #FFFFFF;
+        --text-dark: #2E2E2E;
+    }
+
+    /* الغلاف - استجابة النصوص */
+    #cover amp-story-grid-layer[template="vertical"] {
+        background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%);
+    }
+
+    #cover h1 {
+        font-size: clamp(2em, 6vw, 2.8em); /* حجم متجاوب */
+        color: var(--text-light);
+        text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        margin: 0.5em 0;
+        position: relative;
+        padding-bottom: 0.3em;
+    }
+
+    #cover h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(60px, 15vw, 80px); /* متجاوب */
+        height: 3px;
+        background: var(--accent-color);
+    }
+
+    #cover p {
+        color: rgba(255,255,255,0.9);
+        font-size: clamp(0.9em, 2vw, 1em); /* متجاوب */
+        letter-spacing: 0.05em;
+    }
+
+    /* صفحات الحيوانات - استجابة النصوص */
+    amp-story-grid-layer h1 {
+        font-size: clamp(2em, 5vw, 2.4em); /* متجاوب */
+        background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0.8em 0;
+    }
+
+   amp-story-grid-layer q {
+    font-style: italic;
+    color: var(--text-dark);
+    padding: clamp(1em, 3vw, 1.2em);
+    margin: 1em 0;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    border-right: 4px solid var(--accent-color);
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    quotes: none; /* إيقاف استخدام العلامات الافتراضية */
+}
+
+.quote-mark {
+    font-size: 3em; /* حجم أكبر */
+    color: #ff5733; /* لون مخصص */
+}
+
+.author {
+    display: block;
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    text-align: left;
+    color: #666;
+    padding-left: 1.2em;
+}
+
+    /* طبقات النصوص فوق الصور */
+    amp-story-grid-layer[template="thirds"] {
+        background: linear-gradient(to bottom, 
+            rgba(0,0,0,0.6) 0%, 
+            rgba(0,0,0,0.3) 50%, 
+            rgba(0,0,0,0.1) 100%);
+        margin-top: -30px;
+    }
+
+    amp-story-grid-layer[template="thirds"] h1 {
+        -webkit-text-fill-color: var(--text-light);
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    amp-story-grid-layer[template="thirds"] p {
+        color: var(--text-light);
+        font-size: clamp(0.9em, 1.8vw, 1em); /* متجاوب */
+        line-height: 1.6;
+        background: rgba(0,0,0,0.4);
+        padding: 1.5em;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        margin-top: 10px;
+    }
+
+    /* صفحة الكولاج - بدون تغييرات */
+    .noedge .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .noedge amp-img {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .noedge amp-img:hover {
+        transform: scale(1.02);
+        z-index: 2;
+    }
+
+    /* البانر - استجابة النصوص */
+    .banner-text {
+        font-size: clamp(1.2em, 3.5vw, 1.6em); /* متجاوب */
+        color: var(--text-light);
+        background: var(--banner-color);
+        padding: 0.8em 1.5em;
+        border-radius: 30px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        display: inline-block;
+        margin: 0 auto;
+        z-index: 10;
+    }
+
+    .banner-layer {
+        align-content: end;
+        padding-bottom: 35px;
+    }
+
+    /* صفحة الختام - بدون تغييرات */
+    amp-story-page-outlink a {
+        background: var(--accent-color);
+        color: var(--text-dark);
+        font-weight: 600;
+        padding: 1em 2em;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8em;
+    }
+
+    amp-story-page-outlink a::before {
+        content: '📱';
+        font-size: 1.4em;
+    }
+
+    amp-story-page-outlink a:hover {
+        background: #085471;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* تحسينات عامة */
+    amp-img {
+        filter: brightness(0.95) contrast(1.05);
+        border-radius: 12px;
+    }
+
+    [animate-in] {
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @keyframes whoosh-in-right {
+        from {
+            transform: translateX(100%) rotate(10deg);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0) rotate(0);
+            opacity: 1;
+        }
+    }
+
+    /* تحسينات للشاشات الصغيرة */
+    @media (max-width: 480px) {
+        amp-story-grid-layer[template="thirds"] p {
+            padding: 1em; /* تقليل الحشو */
+        }
+        
+        .noedge .wrapper {
+            gap: 0.8em; /* تقليل المسافات */
+        }
+        
+        .banner-layer {
+            padding-bottom: 25px; /* تعديل المسافة */
+        }
+    }
+</style>
+
+
+<!--[ Explicitly sets post thumbnail ]-->
+<!--[
+  <div class='separator'><img src='#'/></div>
+]-->
+
+</head>
+<body>
+<!--[ صفحة الغلاف ]-->
+<amp-story standalone
+    title='قصة ويب - صوان'
+    publisher='مدونة صوان'
+    publisher-logo-src='siwane.svg'
+    poster-portrait-src='cover.jpg'>
+  <amp-story-page id='cover' auto-advance-after="7s">
+    <amp-story-grid-layer template='fill'>
+      <amp-img src='webstory.jpg'
+          width='540' height='720'
+          layout='responsive'>
+      </amp-img>
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template='vertical'>
+      <h1>مدونة صوان للتقنية</h1>
+      <p>بواسطة فريق صوان</p>
+    </amp-story-grid-layer>
+  </amp-story-page>
+
+  <!--[ الصفحة 1: مقدمة ]-->
+  <amp-story-page id="page1">
+  <amp-story-grid-layer template="vertical">
+    <h1>بوابتك لعالم التقنية</h1>
+    <amp-img src="webstory.jpg" width="540" height="720" layout="responsive"></amp-img>
+    <q>
+     <span class="quote-mark">“</span> نسعى لجعل التقنية في متناول الجميع بلغة عربية مبسطة
+      <br />
+      <span class="author">- صوان</span>
+    </q>
+  </amp-story-grid-layer>
+</amp-story-page>
+
+  <!--[ الصفحة 2: المحتوى ]-->
+  <amp-story-page id='page2'>
+    <amp-story-grid-layer template='fill'>
+      <amp-img src='webstory.jpg' 
+          width='540' height='720'
+          layout='responsive'>
+      </amp-img>
+    </amp-story-grid-layer>
+      <amp-story-grid-layer template='thirds'>
+        <h1 grid-area='upper-third'>ماذا نقدم؟</h1>
+        <p grid-area='lower-third'>أحدث مقالات التقنية، شروحات البرمجة، مراجعات الأجهزة، ونصائح الأمان الرقمي بمحتوى عربي احترافي يناسب المبتدئين والخبراء</p>
+    </amp-story-grid-layer>
+  </amp-story-page>
+
+  <!--[ الصفحة 3: إحصائيات ]-->
+  <amp-story-page id='page5'>
+    <amp-story-grid-layer template='vertical' class='noedge'>
+      <div class='wrapper'>
+        <amp-img src='webstory.jpg'
+            width='540' height='720'
+            layout='responsive'
+            animate-in='fade-in'
+            animate-in-delay='0.4s'>
+        </amp-img>
+        <amp-img src='webstory.jpg'
+            width='540' height='720'
+            layout='responsive'
+            animate-in='fade-in'
+            animate-in-delay='0.6s'>
+        </amp-img>
+        <amp-img src='webstory.jpg'
+            width='540' height='720'
+            layout='responsive'
+            animate-in='fade-in'
+            animate-in-delay='.8s'>
+        </amp-img>
+        <amp-img src='webstory.jpg'
+            width='540' height='720'
+            layout='responsive'
+            animate-in='fade-in'
+            animate-in-delay='1s'>
+        </amp-img>
+      </div>
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template='vertical' class="banner-layer">
+      <p class='banner-text' animate-in='whoosh-in-right'>+500 مقالة تقنية<br>+100 ألف قارئ شهريًا</p>
+    </amp-story-grid-layer>
+  </amp-story-page>
+   <!--[ الصفحة 4: إحصائيات ]-->
+  <amp-story-page id="video-page">
+  <amp-story-grid-layer template="fill">
+    <amp-video width="360" height="640" layout="responsive" controls autoplay>
+      <source src="introsiwane.mp4" type="video/mp4">
+    </amp-video>
+  </amp-story-grid-layer>
+</amp-story-page>
+  
+  <!--[ الصفحة الأخيرة ]-->
+  <amp-story-page id='page6'>
+    <amp-story-grid-layer template='fill'>
+      <amp-img src='webstory.jpg' 
+          width='540' height='720'
+          layout='responsive'>
+      </amp-img>
+    </amp-story-grid-layer>
+      <amp-story-grid-layer template='thirds'>
+        <h1 grid-area='upper-third'>انضم إلينا!</h1>
+        <p grid-area='lower-third'>زوروا مدونتنا لاكتشاف أحدث المحتويات التقنية واشتركوا في النشرة البريدية للحصول على آخر التحديثات</p>
+    </amp-story-grid-layer>
+    <amp-story-page-outlink layout="nodisplay">
+      <a role="link" target="_top" href="https://siwane.xyz" rel="nofollow">زيارة الموقع الآن</a>
+    </amp-story-page-outlink>
+  </amp-story-page>
+</amp-story>
+</body>
+</html>
+
