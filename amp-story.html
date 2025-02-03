@@ -304,21 +304,6 @@
             padding-bottom: 25px; /* تعديل المسافة */
         }
     }
-    /* ضبط العنوان في الأعلى */
-.title-layer {
-    align-items: flex-start;
-    padding-top: 20px; /* إضافة مسافة من الأعلى */
-}
-
-.story-title {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* خلفية نصف شفافة */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
 /* ضبط الفقرة في الأسفل */
 .text-layer {
@@ -327,12 +312,22 @@
 }
 
 .story-text {
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* خلفية نصف شفافة */
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: var(--text-light);
+    font-size: clamp(0.9em, 1.8vw, 1em); /* متجاوب */
+    line-height: 1.6;
+    background: rgba(0,0,0,0.4);
+    padding: 1.5em;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+
+    position: absolute; /* تثبيت الفقرة */
+    bottom: 20px; /* وضعها في الأسفل مع هامش */
+    right: 0; /* محاذاة الفقرة إلى اليمين */
+    width: auto; /* السماح بعرض ديناميكي */
+    max-width: 80%; /* تجنب الامتداد الزائد */
+    text-align: right; /* محاذاة النص لليمين */
+    direction: rtl; /* التأكد من أن النص يتبع الاتجاه الصحيح */
+    margin-right: 20px; /* إضافة مسافة من اليمين */
 }
 </style>
 
@@ -438,7 +433,7 @@
 
     <!-- طبقة العنوان -->
     <amp-story-grid-layer template="vertical" class="title-layer">
-        <h1 class="story-title">صوان</h1>
+        <h1>صوان</h1>
     </amp-story-grid-layer>
 
     <!-- طبقة الفقرة -->
@@ -466,4 +461,3 @@
 </amp-story>
 </body>
 </html>
-
