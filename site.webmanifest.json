@@ -1,0 +1,26 @@
+{
+  "name": "صوان - قصص ويب",
+  "short_name": "صوان",
+  "description": "موقع يحتوي على قصص ويب متوافقة مع معايير Google، مع تصميم متجاوب وقابل للتخصيص.",
+  "start_url": "https://webstory.siwane.xyz",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://webstory.siwane.xyz/logo.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "https://webstory.siwane.xyz/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://webstory.siwane.xyz/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
