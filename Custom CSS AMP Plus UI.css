@@ -1,3 +1,117 @@
+    /* الأساسيات - نفس التخصيصات مع تحسينات استجابة */
+    amp-story-page {
+        background: linear-gradient(360deg,
+                #D0F0EA 0%,
+                #92E0D3 20%,
+                #6DB2A6 55%,
+                #2B8578 90%,
+                #446662 100%);
+        color: #fff;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    amp-story {
+        font-family: 'Tajawal', sans-serif;
+        --primary-color: #92E0D3;
+        --accent-color: #299e94;
+        --banner-color: #446662;
+        --text-light: #FFFFFF;
+        --text-dark: #2E2E2E;
+    }
+
+    /* الغلاف - استجابة النصوص */
+    #cover amp-story-grid-layer[template="vertical"] {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    #cover h1 {
+        font-size: clamp(2em, 6vw, 2.8em);
+        /* حجم متجاوب */
+        color: var(--text-light);
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        margin: 0.5em 0;
+        position: relative;
+        padding-bottom: 0.3em;
+    }
+
+    #cover h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(60px, 15vw, 80px);
+        /* متجاوب */
+        height: 3px;
+        background: var(--accent-color);
+    }
+
+    #cover p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: clamp(0.9em, 2vw, 1em);
+        /* متجاوب */
+        letter-spacing: 0.05em;
+    }
+
+    /* صفحات القصص - استجابة النصوص */
+    amp-story-grid-layer h1 {
+        font-size: clamp(2em, 5vw, 2.4em);
+        /* متجاوب */
+        background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0.8em 0;
+    }
+
+    amp-story-grid-layer q {
+        font-style: italic;
+        color: var(--text-dark);
+        padding: clamp(1em, 3vw, 1.2em);
+        margin: 1em 0;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        position: relative;
+        border-right: 4px solid var(--accent-color);
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        quotes: none;
+        /* إيقاف استخدام العلامات الافتراضية */
+    }
+
+    .quote-mark {
+        font-size: 3em;
+        /* حجم أكبر */
+        color: #ff5733;
+        /* لون مخصص */
+    }
+
+    .author {
+        display: block;
+        margin-top: 0.8em;
+        font-size: 0.9em;
+        text-align: left;
+        color: #666;
+        padding-left: 1.2em;
+    }
+
+    /* طبقات النصوص فوق الصور */
+    amp-story-grid-layer[template="thirds"] {
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.6) 0%,
+                rgba(0, 0, 0, 0.3) 50%,
+                rgba(0, 0, 0, 0.1) 100%);
+        margin-top: -30px;
+    }
+
+    amp-story-grid-layer[template="thirds"] h1 {
+        -webkit-text-fill-color: var(--text-light);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
     amp-story-grid-layer[template="thirds"] p {
         color: var(--text-light);
         font-size: clamp(0.9em, 1.8vw, 1em);
@@ -112,39 +226,4 @@
             padding-bottom: 25px;
             /* تعديل المسافة */
         }
-    }
-
-    /* ضبط الفقرة في الأسفل */
-    .text-layer {
-        align-items: flex-end;
-        padding-bottom: 30px;
-        /* مسافة من الأسفل */
-    }
-
-    .story-text {
-        color: var(--text-light);
-        font-size: clamp(0.9em, 1.8vw, 1em);
-        /* متجاوب */
-        line-height: 1.6;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 1.5em;
-        border-radius: 12px;
-        backdrop-filter: blur(5px);
-
-        position: absolute;
-        /* تثبيت الفقرة */
-        bottom: 20px;
-        /* وضعها في الأسفل مع هامش */
-        right: 0;
-        /* محاذاة الفقرة إلى اليمين */
-        width: auto;
-        /* السماح بعرض ديناميكي */
-        max-width: 80%;
-        /* تجنب الامتداد الزائد */
-        text-align: right;
-        /* محاذاة النص لليمين */
-        direction: rtl;
-        /* التأكد من أن النص يتبع الاتجاه الصحيح */
-        margin-right: 20px;
-        /* إضافة مسافة من اليمين */
     }
