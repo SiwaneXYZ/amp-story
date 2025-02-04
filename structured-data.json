@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "صوان ـ أفضل قصص ويب من صوان محور XYZ بواسطة جمال الحزازي",
+  "description": "استمتع بأحدث قصص الويب من صوان، يتم تقديمها بواسطة جمال الحزازي. قصص تجمع بين الترفيه والتعليم لتقديم محتوى ملهم وجديد.",
+  "datePublished": "2024-02-03T12:00:00+00:00",
+  "dateModified": "2024-02-03T12:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "جمال الحزازي",
+    "url": "https://siwane.xyz",
+    "sameAs": ["https://twitter.com/jamal_hazzazi", "https://www.linkedin.com/in/jamal-hazzazi"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "صوان",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://webstory.siwane.xyz/logo.png",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://webstory.siwane.xyz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://webstory.siwane.xyz/cover.jpg",
+    "width": 1200,
+    "height": 675
+  },
+  "video": {
+    "@type": "VideoObject",
+    "name": "عنوان الفيديو داخل القصة",
+    "description": "وصف الفيديو",
+    "thumbnailUrl": "https://webstory.siwane.xyz/video-thumbnail.jpg",
+    "contentUrl": "https://webstory.siwane.xyz/introsiwane.mp4",
+    "uploadDate": "2024-02-03T12:00:00+00:00"
+  },
+  "isAccessibleForFree": "True",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://siwane.xyz"
+  },
+  "keywords": "قصص ويب, صوان, جمال الحزازي, سرد القصص, web stories, فيديوهات قصيرة, قصص تعليمية, محتوى رقمي, تقنية",
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://webstory.siwane.xyz/amp-story.html"
+    },
+    "name": "اقرأ القصة الآن"
+  }
+}
