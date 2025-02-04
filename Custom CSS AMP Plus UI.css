@@ -1,0 +1,150 @@
+    amp-story-grid-layer[template="thirds"] p {
+        color: var(--text-light);
+        font-size: clamp(0.9em, 1.8vw, 1em);
+        /* متجاوب */
+        line-height: 1.6;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1.5em;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        margin-top: 10px;
+    }
+
+    /* صفحة الكولاج - بدون تغييرات */
+    .noedge .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .noedge amp-img {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .noedge amp-img:hover {
+        transform: scale(1.02);
+        z-index: 2;
+    }
+
+    /* البانر - استجابة النصوص */
+    .banner-text {
+        font-size: clamp(1.2em, 3.5vw, 1.6em);
+        /* متجاوب */
+        color: var(--text-light);
+        background: var(--banner-color);
+        padding: 0.8em 1.5em;
+        border-radius: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        margin: 0 auto;
+        z-index: 10;
+    }
+
+    .banner-layer {
+        align-content: end;
+        padding-bottom: 35px;
+    }
+
+    /* صفحة الختام - بدون تغييرات */
+    amp-story-page-outlink a {
+        background: var(--accent-color);
+        color: var(--text-dark);
+        font-weight: 600;
+        padding: 1em 2em;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8em;
+    }
+
+    amp-story-page-outlink a::before {
+        content: '📱';
+        font-size: 1.4em;
+    }
+
+    amp-story-page-outlink a:hover {
+        background: #085471;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* تحسينات عامة */
+    amp-img {
+        filter: brightness(0.95) contrast(1.05);
+        border-radius: 12px;
+    }
+
+    [animate-in] {
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @keyframes whoosh-in-right {
+        from {
+            transform: translateX(100%) rotate(10deg);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0) rotate(0);
+            opacity: 1;
+        }
+    }
+
+    /* تحسينات للشاشات الصغيرة */
+    @media (max-width: 480px) {
+        amp-story-grid-layer[template="thirds"] p {
+            padding: 1em;
+            /* تقليل الحشو */
+        }
+
+        .noedge .wrapper {
+            gap: 0.8em;
+            /* تقليل المسافات */
+        }
+
+        .banner-layer {
+            padding-bottom: 25px;
+            /* تعديل المسافة */
+        }
+    }
+
+    /* ضبط الفقرة في الأسفل */
+    .text-layer {
+        align-items: flex-end;
+        padding-bottom: 30px;
+        /* مسافة من الأسفل */
+    }
+
+    .story-text {
+        color: var(--text-light);
+        font-size: clamp(0.9em, 1.8vw, 1em);
+        /* متجاوب */
+        line-height: 1.6;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1.5em;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+
+        position: absolute;
+        /* تثبيت الفقرة */
+        bottom: 20px;
+        /* وضعها في الأسفل مع هامش */
+        right: 0;
+        /* محاذاة الفقرة إلى اليمين */
+        width: auto;
+        /* السماح بعرض ديناميكي */
+        max-width: 80%;
+        /* تجنب الامتداد الزائد */
+        text-align: right;
+        /* محاذاة النص لليمين */
+        direction: rtl;
+        /* التأكد من أن النص يتبع الاتجاه الصحيح */
+        margin-right: 20px;
+        /* إضافة مسافة من اليمين */
+    }
