@@ -143,10 +143,25 @@
     }
 
     #cover p {
-        color: rgba(255,255,255,0.9);
-        font-size: clamp(0.9em, 2vw, 1em); /* متجاوب */
+        
         letter-spacing: 0.05em;
-        margin: auto;
+        
+        color: var(--text-light);
+        font-size: clamp(0.9em, 1.8vw, 1em); /* متجاوب */
+        line-height: 1.6;
+        background: rgba(0,0,0,0.4);
+        padding: 1.5em;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+
+        position: absolute; /* تثبيت الفقرة */
+        bottom: 20px; /* وضعها في الأسفل مع هامش */
+        right: 0; /* محاذاة الفقرة إلى اليمين */
+        width: auto; /* السماح بعرض ديناميكي */
+        max-width: 80%; /* تجنب الامتداد الزائد */
+        text-align: right; /* محاذاة النص لليمين */
+        direction: rtl; /* التأكد من أن النص يتبع الاتجاه الصحيح */
+        margin-right: 20px; /* إضافة مسافة من اليمين */
     }
 
     /* صفحات الحيوانات - استجابة النصوص */
