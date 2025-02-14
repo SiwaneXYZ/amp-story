@@ -254,32 +254,35 @@
     }
 
     /* صفحة الختام - بدون تغييرات */
-    amp-story-page-outlink a {
-        background: var(--accent-color);
-        color: var(--text-dark);
-        font-weight: 600;
-        padding: 1em 2em;
-        border-radius: 30px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.8em;
-    }
+    /* زر صفحة الختام */
+amp-story-page-outlink a {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 1em 2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em; /* تقليل المسافة بين العناصر */
+}
 
-    amp-story-page-outlink a::before {
-        content: url('siwane.svg');
-        position: center;
-        display: inline-block;
-        width: 32px;
-        height: 32px; 
-    }
+/* أيقونة siwane.svg */
+amp-story-page-outlink a::before {
+    content: url('siwane.svg');
+    display: inline-block;
+    width: 24px; /* تصغير الحجم ليكون مناسبًا */
+    height: 24px;
+    margin-right: -4px; /* تقليل المسافة بينها وبين الأيقونة الافتراضية */
+}
 
-    amp-story-page-outlink a:hover {
-        background: #085471;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
+/* تأثير التحويم */
+amp-story-page-outlink a:hover {
+    background: #085471;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 
     /* تحسينات عامة */
     amp-img {
