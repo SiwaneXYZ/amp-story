@@ -255,6 +255,7 @@
 
     /* صفحة الختام - بدون تغييرات */
     /* زر صفحة الختام */
+/* زر "زيارة الصفحة" */
 amp-story-page-outlink a {
     background: var(--accent-color);
     color: var(--text-dark);
@@ -265,16 +266,18 @@ amp-story-page-outlink a {
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 0.5em; /* تقليل المسافة بين العناصر */
+    gap: 0.5em; /* الحفاظ على مسافة متناسقة بين العناصر */
 }
 
 /* أيقونة siwane.svg */
 amp-story-page-outlink a::before {
-    content: url('siwane.svg');
+    content: "";
     display: inline-block;
-    width: 24px; /* تصغير الحجم ليكون مناسبًا */
+    width: 24px;
     height: 24px;
-    margin-right: -4px; /* تقليل المسافة بينها وبين الأيقونة الافتراضية */
+    background-image: url('siwane.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* تأثير التحويم */
